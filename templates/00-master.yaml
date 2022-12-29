@@ -301,6 +301,9 @@ Parameters:
     Type: String
   DatabaseInstanceType:
     AllowedValues:
+      - db.t3.micro
+      - db.t3.small
+      - db.t2.medium
       - db.r4.large
       - db.r4.xlarge
       - db.r4.2xlarge
@@ -647,6 +650,7 @@ Parameters:
     Type: List<AWS::EC2::AvailabilityZone::Name>
   NumberOfAZs:
     AllowedValues:
+    - 1
     - 2
     - 3
     - 4
